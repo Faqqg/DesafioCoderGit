@@ -176,8 +176,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
-    height: 100%;
     margin: 0;
 }
 
@@ -310,7 +308,7 @@ footer p {
 
 .registro {
     width: 300px;
-    height: 660px;
+    height: 600px;
     background-color: rgb(255, 255, 255);
     margin: auto;
     margin-top: 70px;
@@ -402,12 +400,7 @@ footer p {
 }
 
 .grid-juegos {
-    margin: auto;
-    background-color: rgb(37, 37, 42);
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 80px;
+
 }
 
 .grid-juegos h2 {
@@ -426,25 +419,7 @@ footer p {
     padding-inline: 10px;
 }
 
-.grid-juegos h2 {
-    color: white;
-}
 
-.billar div img {
-    width: 340px;
-    height: 250px;
-}
-
-
-.poker div img {
-    width: 340px;
-    height: 250px;
-}
-
-.ruleta div img {
-    width: 340px;
-    height: 250px;
-}
 
 /* ACA TERMINA PAG JUEGOS */
 
@@ -794,11 +769,12 @@ footer {
         margin: auto;
         width: 340px;
         height: 530px;
-        background-color: rgb(37, 37, 42);
         padding: 0px;
+        background-color: rgba(255, 255, 255, 0);
         display: flex;
         flex-direction: column;
         margin-top: 80px;
+        margin-bottom: 100px;
     }
 
     .grid-juegos h2 {
