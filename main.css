@@ -1,5 +1,16 @@
 /* ESTO ES TODO EL INDEX */
 
+
+.navbar-nav {
+    margin-left: 0px !important;
+    text-align: center;
+
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.909) !important;
+}
+
 nav {
     background-color: rgb(0, 0, 0);
     padding: 5px;
@@ -39,10 +50,16 @@ nav ul li {
 }
 
 header {
-    height: 300px;
     background-image: url('imagenes/fondo.jpg');
     background-size: cover;
-    background-position-y: bottom;
+}
+
+.carousel-item {
+    max-width: 80%;
+}
+
+.carousel-item img {
+    margin-left: 100px;
 }
 
 header h2 {
@@ -175,8 +192,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    margin: 0;
+    padding: 80px;
+    margin-top: 200px;
+    height: 300px;
+
 }
 
 footer p {
@@ -210,36 +229,14 @@ footer p {
 /* ACA TERMINA EL INDEX */
 
 /* ESTO ES EL ACCESO A UNA CUENTA */
-.nav-add {
-    background-color: rgb(0, 0, 0);
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: sticky;
-    top: 0;
+.row {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
-.nav-add h1 {
-    font-family: 'Teko', sans-serif;
-    color: rgb(249, 252, 34);
-    font-size: 14px;
-    display: flex;
-    justify-content: left;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-add img {
-    width: 45px;
-    height: 25px;
-}
-
-.nav-add ul li {
-    justify-content: end;
-    display: inline-block;
-    font-size: 10px;
-    font-family: 'Bebas Neue', cursive;
+.col {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 
 .acceso {
@@ -302,6 +299,16 @@ footer p {
     color: yellow;
 }
 
+.footer {
+    background-color: rgb(41, 43, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 200px;
+    height: 300px;
+}
+
 /* ACA TERMINA LA PAG ACCESO */
 
 /* ESTO ES LA PAG DE REGISTRO */
@@ -351,11 +358,16 @@ footer p {
 /* ACA TERMINA EL REGISTRO */
 
 /* ESTO ES LA PAG DE JUEGOS */
+.row-juegos {
+    display: flex !important;
+    flex-direction: column;
+}
+
 
 .fondo-juegos {
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(59, 14, 14, 1) 49%, rgba(13, 10, 10, 1) 100%);
-    padding: 10px;
+
 }
 
 .titulo-juegos {
@@ -400,7 +412,8 @@ footer p {
 }
 
 .grid-juegos {
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid-juegos h2 {
@@ -419,11 +432,22 @@ footer p {
     padding-inline: 10px;
 }
 
+.footer-juegos {
+    margin: 0px;
+    padding: 30px;
+}
 
 
 /* ACA TERMINA PAG JUEGOS */
 
 /* PAG QUIENES SOMOS */
+
+.navbar-nosotros {
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
 
 .titulo-quienes-somos {
     width: 250px;
@@ -449,8 +473,9 @@ footer p {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin-top: 30px;
-    text-align: left;
+    text-align: center;
     margin-left: 80px;
+
 }
 
 .lugar {
@@ -458,9 +483,19 @@ footer p {
     justify-content: center;
 }
 
+.info-nosotros {
+    text-align: center;
+}
+
 .lugar img {
-    width: 300px;
+    width: 500px;
     height: 250px;
+    margin-left: 300px;
+}
+
+.cont-nosotros {
+    display: flex;
+    flex-direction: column;
 }
 
 .maps h2 {
@@ -473,6 +508,10 @@ footer p {
 
 .maps {
     margin-bottom: 30px;
+}
+
+.mapita {
+    margin-top: 200px;
 }
 
 .maps iframe {
@@ -514,6 +553,9 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (min-width:768px) {
+
+
+
     .main-wrapper {
         grid-template-areas:
             "nav"
@@ -548,9 +590,8 @@ footer {
         font-size: 25px;
     }
 
+
     nav ul li {
-        justify-content: end;
-        display: inline-block;
         margin: 0 15px;
         font-family: 'Bebas Neue', cursive;
         font-size: 20px;
@@ -723,6 +764,7 @@ footer {
         padding: 10px;
     }
 
+
     .titulo-juegos {
         width: 100%;
         height: 80px;
@@ -814,6 +856,11 @@ footer {
     }
 
     /* MEDIA QUIENESSOMOS */
+    .cont-nosotros {
+        display: flex;
+        flex-direction: row;
+    }
+
     .titulo-quienes-somos {
         width: 300px;
         height: 60px;
@@ -823,6 +870,12 @@ footer {
         margin: auto;
         margin-top: 50px;
         display: flex;
+    }
+
+    .lugar img {
+        width: 300px;
+        height: 250px;
+        margin-left: 50px;
     }
 
     .titulo-quienes-somos {
@@ -842,6 +895,11 @@ footer {
         display: flex;
         color: white;
         margin-top: 50px;
+        text-align: left;
+    }
+
+    .info-nosotros {
+        text-align: left;
     }
 
     .lugar {

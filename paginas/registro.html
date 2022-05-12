@@ -29,23 +29,37 @@
 
 <body background="../imagenes/fondo2.jpg">
   <div class="container" style="max-width: 100%; padding: 0;">
-    <div class="row" style="position: sticky; top: 0;">
+    <div class="row">
       <div class="col">
-        <nav class="nav-add">
-          <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="imagen de logo" height="70px"></a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo.png"
+                alt="imagen de logo" height="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" style="color: white;" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="acceso.html">Acceder</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="registro.html">Registrate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="juegos.html">Juegos</a>
+                </li>
 
-          <h1>ANASHE</h1>
-
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="acceso.html">Acceder a tu cuenta</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="juegos.html">Juegos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienessomos.html">Quienes somos</a>
-          </ul>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" href="quienessomos.html">Sobre nosotros</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </div>
@@ -129,7 +143,7 @@
 
     <div class="row">
       <div class="col">
-        <footer>
+        <footer class="footer">
           <p>Seguinos en nuestras redes!</p>
           <div>
             <a class="img-1" href="https://web.whatsapp.com/" target="blank"><img src="../imagenes/logowhatsapp.png"

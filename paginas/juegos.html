@@ -34,24 +34,40 @@
 
 <body>
     <div class="container" style="max-width: 100%; padding: 0;">
-        <div class="row" style="position: sticky; top: 0;">
+        <div class="row">
             <div class="col">
-                <nav class="nav-add">
-                    <a href="../index.html"><img class="logo" src="../imagenes/logo.png" alt="imagen de logo"
-                            height="70px"></a>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="../index.html"><img class="logo" src="../imagenes/logo.png"
+                                alt="imagen de logo" height="70px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" style="color: white;" aria-current="page"
+                                        href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white;" href="acceso.html">Acceder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white;" href="registro.html">Registrate</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white;" href="juegos.html">Juegos</a>
+                                </li>
 
-                    <h1>ANASHE</h1>
-
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="acceso.html">Acceder a tu cuenta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="juegos.html">Juegos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quienessomos.html">Quienes somos</a>
-                    </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" style="color: white;" href="quienessomos.html">Sobre
+                                        nosotros</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
@@ -67,20 +83,22 @@
                         </section>
                     </div>
                     <div class="col">
-                    <section class="subtitulo-juegos">
-                        <h3>Cómo Jugar</h3>
-                        <p>Te contamos las claves prácticas de los juegos de casino online más destacados. Con nuestra
-                            ayuda,
-                            podrás usar las mejores técnicas para slots, póker o blackjack para
-                            exprimir a fondo tus opciones sin olvidar los riesgos ni la dificultad de lograr ganancias.
-                        </p>
-                    </section>
-                </div>
+                        <section class="subtitulo-juegos">
+                            <h3>Cómo Jugar</h3>
+                            <p>Te contamos las claves prácticas de los juegos de casino online más destacados. Con
+                                nuestra
+                                ayuda,
+                                podrás usar las mejores técnicas para slots, póker o blackjack para
+                                exprimir a fondo tus opciones sin olvidar los riesgos ni la dificultad de lograr
+                                ganancias.
+                            </p>
+                        </section>
+                    </div>
             </div>
             <section class="container">
 
-                <div class="row">
-                    <div class="col-4">
+                <div class="row-juegos">
+                    <div class="col-4 w-100 d-flex justify-content-center">
                         <div class="grid-juegos">
                             <div class="card"
                                 style="width: 20rem; position: static; padding: 6px; background-color: rgb(30, 27, 27); color: white; text-align: center;">
@@ -97,7 +115,7 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-4 w-100 d-flex justify-content-center">
                         <div class="grid-juegos">
                             <div class="card"
                                 style="width: 20rem; position: static; padding: 6px; background-color: rgb(30, 27, 27); color: white; text-align: center;">
@@ -115,10 +133,10 @@
                         </div>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-4 w-100 d-flex justify-content-center">
                         <div class="grid-juegos">
                             <div class="card"
-                                style="width: 20rem; position: static; padding: 6px; background-color: rgb(30, 27, 27); color: white; text-align: center;">
+                                style="width: 20rem; position: static; margin-bottom: 200px; padding: 6px; background-color: rgb(30, 27, 27); color: white; text-align: center;">
                                 <img src="../imagenes/juegos_billar.jpg" alt="imagen de billar">
                                 <div class="card-body">
                                     <h5 class="card-title">Cómo jugar</h5>
@@ -142,7 +160,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <footer>
+                <footer class="footer-juegos">
                     <p>Seguinos en nuestras redes!</p>
                     <div>
                         <a class="img-1" href="https://web.whatsapp.com/" target="blank"><img
