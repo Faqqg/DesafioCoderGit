@@ -1,0 +1,55 @@
+footer {
+    background-color: rgb(41, 43, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    margin-top: 200px;
+    height: 300px;
+
+    p {
+        font-family: 'Teko', sans-serif;
+        font-size: 22px;
+        color: white;
+    }
+
+    .img-1 {
+        justify-content: center;
+        display: inline-block;
+        margin: 0 15px;
+        padding: 8px;
+    }
+
+    .img-2 {
+        justify-content: center;
+        display: inline-block;
+        margin: 0 15px;
+        padding: 10px 0px 5px;
+    }
+
+
+    .img-3 {
+        justify-content: center;
+        display: inline-block;
+        margin: 0 15px;
+        padding: 8px;
+    }
+
+}
+
+
+.footer-juegos {
+    margin: 0px;
+    padding: 30px;
+}
+
+
+.footer {
+    background-color: rgb(41, 43, 67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin-top: 200px;
+    height: 300px;
+}

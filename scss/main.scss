@@ -1,0 +1,833 @@
+// IMPORT
+@import "nav";
+@import "footer";
+
+// 
+
+
+// VARIABLES
+$color-primary: white;
+$color-secondary: yellow;
+
+// 
+
+
+
+
+/* ESTO ES TODO EL INDEX */
+
+
+
+header {
+    background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+        color: rgb(54, 148, 255);
+        -webkit-text-stroke: 0.2px rgb(16, 2, 109);
+    }
+
+    p {
+        margin-top: 170px;
+        display: flex;
+        justify-content: center;
+        font-family: 'Teko', sans-serif;
+        font-size: 25px;
+        color: $color-primary;
+    }
+
+    p a {
+        display: flex;
+        justify-content: center;
+        font-family: 'Teko', sans-serif;
+        font-size: 25px;
+        color: $color-secondary;
+        margin-inline: 5px;
+        text-decoration: none;
+    }
+}
+
+
+.carousel-item {
+    max-width: 80%;
+
+    img {
+        margin-left: 100px;
+    }
+}
+
+
+
+main {
+    background-image: url('fondo2.jpg');
+    background-size: contain;
+    background-position-y: center;
+
+    .subtitulo-1 {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;
+        color: $color-primary;
+    }
+
+    .subtitulo-2 {
+        display: flex;
+        justify-content: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 35px;
+        color: $color-primary;
+    }
+
+    .subtitulo-3 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        width: 580px;
+        height: 220px;
+        background-color: rgba(255, 255, 255, 0.189);
+        margin-bottom: 20px;
+
+        p {
+            font-family: 'Pridi', serif;
+            font-size: 17px;
+            color: $color-primary;
+        }
+    }
+}
+
+.video {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* ACA TERMINA EL INDEX */
+
+
+.row {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.col {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+
+
+
+
+
+/* ESTO ES EL ACCESO A UNA CUENTA */
+
+
+
+
+.acceso-general {
+    display: flex;
+    justify-content: center;
+
+    .acceso {
+        width: 300px;
+        height: 350px;
+        background-color: $color-primary;
+        margin-top: 60px;
+        box-shadow: 7px 13px 37px black;
+        padding: 20px 30px;
+        font-family: 'Bebas Neue', cursive;
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid;
+            font-size: 30px;
+        }
+    }
+
+    .controls {
+        width: 70%;
+        border: 2px solid #5e025e;
+        margin-bottom: 15px;
+        padding: 7px 5px;
+    }
+
+    .button {
+        width: 100%;
+        height: 40px;
+        background-color: #6329d6;
+        border: 2px solid rgb(52, 50, 50);
+        margin-bottom: 16px;
+        color: $color-primary;
+        font-size: 17px;
+    }
+
+
+}
+
+.registrate {
+    a {
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+.boton-inicio {
+    margin: 15px;
+    padding: 15px;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    a {
+        margin-inline: 5px;
+        color: $color-secondary;
+        text-decoration: none;
+    }
+
+}
+
+
+
+/* ACA TERMINA LA PAG ACCESO */
+
+
+
+
+
+
+
+
+/* ESTO ES LA PAG DE REGISTRO */
+
+
+.registro-general {
+    display: flex;
+    justify-content: center;
+
+    .registro {
+        width: 300px;
+        height: 600px;
+        background-color: $color-primary;
+        margin: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        box-shadow: 7px 13px 37px black;
+        padding: 30px;
+        font-family: 'Bebas Neue', cursive;
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid;
+            font-size: 20px;
+        }
+    }
+
+    .controls-dos {
+        width: 70%;
+        border: 2px solid #5e025e;
+        padding: 7px 5px;
+    }
+
+    .button-dos {
+        width: 100%;
+        height: 40px;
+        background-color: #6329d6;
+        border: 2px solid rgb(52, 50, 50);
+        margin-top: 30px;
+        color: $color-primary;
+        font-size: 17px;
+    }
+}
+
+/* ACA TERMINA EL REGISTRO */
+
+
+
+
+
+
+
+
+
+
+/* ESTO ES LA PAG DE JUEGOS */
+.row-juegos {
+    display: flex !important;
+    flex-direction: column;
+
+    .grid-juegos {
+        display: flex;
+        flex-wrap: wrap;
+
+        h2 {
+            text-align: center;
+            justify-content: center;
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            justify-content: center;
+            font-size: 14px;
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            padding-inline: 10px;
+        }
+    }
+}
+
+
+.fondo-juegos {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(59, 14, 14, 1) 49%, rgba(13, 10, 10, 1) 100%);
+
+    .titulo-juegos {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            font-size: 18px;
+            margin-top: 40px;
+            margin-bottom: 0;
+
+            a {
+                font-family: 'Ubuntu', sans-serif;
+                color: $color-secondary;
+                text-decoration: none;
+                font-size: 18px;
+                margin-left: 38px;
+                margin-top: 40px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .subtitulo-juegos {
+        h3 {
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            font-size: 25px;
+            margin: 0px 120px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #b9babb;
+            font-size: 17px;
+            margin: 0px 50px;
+            padding: 20px;
+            text-align: left;
+        }
+    }
+
+}
+
+/* ACA TERMINA PAG JUEGOS */
+
+
+
+
+
+
+
+
+
+
+
+/* PAG QUIENES SOMOS */
+
+.navbar-nosotros {
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+.titulo-quienes-somos {
+    width: 250px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.228);
+    border: 2px solid rgba(255, 255, 255, 0.075);
+    margin-top: 20px;
+}
+
+.titulo-quienes-somos {
+    font-size: 20px;
+    font-family: 'Teko', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: $color-primary;
+    padding: 0;
+    padding-bottom: 15px;
+    margin-left: 80px;
+}
+
+
+
+.cont-nosotros {
+    display: flex;
+    flex-direction: column;
+
+    .texto-quienes-somos {
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+        color: $color-primary;
+        margin-top: 30px;
+        text-align: center;
+        margin-left: 80px;
+
+    }
+
+    .lugar {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.lugar img {
+    width: 500px;
+    height: 250px;
+    margin-left: 300px;
+}
+
+
+.info-mapa {
+    margin-top: 200px;
+
+    .maps {
+        margin-bottom: 30px;
+
+        iframe {
+            display: flex;
+            margin: auto;
+            width: 350px;
+            height: 250px;
+        }
+    }
+}
+
+
+.info-nosotros {
+    text-align: center;
+}
+
+/* ACA TERMINA PAG QUIENES SOMOS */
+
+
+
+
+
+/* GRID DEFINIDO */
+.main-wrapper {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "footer"
+    ;
+
+    header {
+        grid-area: header;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width:768px) {
+
+
+
+    .main-wrapper {
+        grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "footer"
+        ;
+    }
+
+    .imagenes {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+
+        ul li {
+            margin: 0 15px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20px;
+            padding: 10px;
+        }
+    }
+
+    .logo {
+        width: 130px;
+        height: 80px;
+    }
+
+    header {
+        height: 450px;
+        background-image: url('../imagenes/fondo.jpg');
+        background-size: cover;
+        background-position-y: bottom;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            padding: 60px 0;
+            margin: 0;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 50px;
+            color: rgb(54, 148, 255);
+            -webkit-text-stroke: 0.2px rgb(16, 2, 109);
+        }
+
+        p {
+            margin-top: 220px;
+            display: flex;
+            justify-content: center;
+            font-family: 'Teko', sans-serif;
+            font-size: 25px;
+            color: $color-primary;
+
+            a {
+                display: flex;
+                justify-content: center;
+                font-family: 'Teko', sans-serif;
+                font-size: 25px;
+                color: $color-secondary;
+                margin-inline: 5px;
+            }
+        }
+
+    }
+
+
+    .subtitulo-3 {
+        width: 800px;
+        height: 220px;
+        margin-bottom: 20px;
+    }
+
+    .subtitulo-3:hover {
+        transform: scale(1.1);
+        transition: .4s;
+    }
+
+    .bottom:hover {
+        transform: scale(.8);
+        transition: .3s;
+    }
+
+    .img-uno:hover {
+        transform: scale(1.2);
+        transition: .3s;
+    }
+
+    .img-dos:hover {
+        transform: scale(1.2);
+        transition: .3s;
+    }
+
+    .img-tres:hover {
+        transform: scale(1.2);
+        transition: .3s;
+    }
+
+
+    .acceso {
+        width: 300px;
+        height: 360px;
+        background-color: $color-primary;
+        margin-top: 60px;
+        box-shadow: 7px 13px 37px black;
+        padding: 20px 30px;
+        font-family: 'Bebas Neue', cursive;
+
+        h2 {
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid;
+            font-size: 30px;
+        }
+
+    }
+
+    .acceso-general {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .controls {
+        width: 70%;
+        border: 2px solid #5e025e;
+        margin-bottom: 15px;
+        padding: 7px 5px;
+    }
+
+    .button {
+        width: 100%;
+        height: 40px;
+        background-color: #6329d6;
+        border: 2px solid rgb(52, 50, 50);
+        margin-bottom: 16px;
+        color: $color-primary;
+        font-size: 17px;
+    }
+
+    .registrate {
+        text-align: center;
+    }
+
+    .boton-inicio {
+        margin: 15px;
+        padding: 15px;
+        color: $color-primary;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+
+        a {
+            margin-inline: 5px;
+            color: $color-secondary;
+        }
+
+    }
+
+
+    /* MEDIA JUEGOS */
+
+    .fondo-juegos {
+        background: rgb(0, 0, 0);
+        background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(59, 14, 14, 1) 49%, rgba(13, 10, 10, 1) 100%);
+        padding: 10px;
+    }
+
+
+    .titulo-juegos {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            font-size: 16px;
+            margin-left: 90px;
+            margin-top: 40px;
+            margin-bottom: 0;
+
+            a {
+                font-family: 'Ubuntu', sans-serif;
+                color: $color-secondary;
+                text-decoration: none;
+                font-size: 16px;
+                margin-left: 38px;
+                margin-top: 40px;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+
+    .subtitulo-juegos {
+        h3 {
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            font-size: 40px;
+            margin: 0px 0px 0px 120px;
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #b9babb;
+            font-size: 17px;
+            text-align: left;
+            margin: 20px 170px 0px 125px;
+        }
+    }
+
+
+
+    .grid-juegos {
+        margin: auto;
+        width: 340px;
+        height: 530px;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        margin-bottom: 100px;
+
+        h2 {
+            text-align: center;
+            justify-content: center;
+            font-size: 25px;
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+        }
+
+        h3 {
+            text-align: center;
+            justify-content: center;
+            font-size: 15px;
+            font-family: 'Ubuntu', sans-serif;
+            color: $color-primary;
+            padding-inline: 10px;
+        }
+    }
+
+    .billar {
+        div {
+            img {
+                width: 340px;
+                height: 250px;
+            }
+        }
+    }
+
+
+    .poker {
+        div {
+            img {
+                width: 340px;
+                height: 250px;
+            }
+        }
+    }
+
+    .ruleta {
+        div {
+            img {
+                width: 340px;
+                height: 250px;
+            }
+        }
+    }
+
+
+    /* MEDIA QUIENESSOMOS */
+    .cont-nosotros {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titulo-quienes-somos {
+        width: 300px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.228);
+        border: 2px solid rgba(255, 255, 255, 0.075);
+        padding: 5px 5px;
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+    }
+
+    .lugar {
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: 300px;
+            height: 250px;
+            margin-left: 50px;
+        }
+    }
+
+
+    .titulo-quienes-somos {
+        font-size: 20px;
+        font-family: 'Teko', sans-serif;
+        display: flex;
+        justify-content: center;
+        color: white;
+        padding: 0;
+        padding-bottom: 15px;
+    }
+
+    .texto-quienes-somos {
+        font-size: 17px;
+        font-family: 'Times New Roman', Times, serif;
+        align-items: center;
+        display: flex;
+        color: white;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .info-nosotros {
+        text-align: left;
+    }
+
+
+    .maps {
+        margin-bottom: 30px;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-family: 'Teko', sans-serif;
+            font-size: 30px;
+        }
+
+        iframe {
+            display: flex;
+            margin: auto;
+        }
+    }
+
+}
