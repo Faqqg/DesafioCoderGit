@@ -29,7 +29,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px;
+  padding: 60px;
   margin-top: 200px;
   height: 500px; }
   footer p {
@@ -100,9 +100,14 @@ header {
     text-decoration: none; }
 
 .carousel-item {
-  max-width: 80%; }
+  display: flex; }
   .carousel-item img {
-    margin-left: 100px; }
+    width: 100px;
+    margin-left: 0px; }
+
+.carousel-inner {
+  margin: auto;
+  width: 200px; }
 
 main {
   background-image: url("fondo2.jpg");
@@ -398,23 +403,8 @@ main {
   text-align: center; }
 
 /* ACA TERMINA PAG QUIENES SOMOS */
-/* GRID DEFINIDO */
-.main-wrapper {
-  display: grid;
-  grid-template-areas: "nav" "header" "main" "footer"; }
-  .main-wrapper header {
-    grid-area: header; }
-  .main-wrapper nav {
-    grid-area: nav; }
-  .main-wrapper main {
-    grid-area: main; }
-  .main-wrapper footer {
-    grid-area: footer; }
-
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
-  .main-wrapper {
-    grid-template-areas: "nav" "header" "main" "footer"; }
   .imagenes {
     display: flex;
     justify-content: space-evenly; }
@@ -684,4 +674,12 @@ main {
       font-size: 30px; }
     .maps iframe {
       display: flex;
-      margin: auto; } }
+      margin: auto; }
+  .carousel-item {
+    display: block; }
+    .carousel-item img {
+      width: 100px;
+      margin-left: 0px; }
+  .carousel-inner {
+    margin: auto;
+    width: 700px; } }
