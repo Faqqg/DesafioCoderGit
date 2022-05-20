@@ -5,7 +5,7 @@ footer {
     align-items: center;
     padding: 80px;
     margin-top: 200px;
-    height: 300px;
+    height: 500px;
 
     p {
         font-family: 'Teko', sans-serif;
@@ -15,24 +15,35 @@ footer {
 
     .img-1 {
         justify-content: center;
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
         margin: 0 15px;
         padding: 8px;
     }
 
     .img-2 {
-        justify-content: center;
-        display: inline-block;
-        margin: 0 15px;
-        padding: 10px 0px 5px;
+        @extend .img-1;
     }
 
 
     .img-3 {
-        justify-content: center;
-        display: inline-block;
-        margin: 0 15px;
-        padding: 8px;
+        @extend .img-1;
+    }
+
+
+    .red-whatsapp {
+        @extend .img-1;
+        color: #25a000;
+    }
+
+    .red-facebook {
+        @extend .img-1;
+        color: #10005e;
+    }
+
+    .red-instagram {
+        @extend .img-1;
+        color: #cb2500;
     }
 
 }
@@ -51,5 +62,5 @@ footer {
     align-items: center;
     padding: 50px;
     margin-top: 200px;
-    height: 300px;
+    height: 400px;
 }

@@ -31,26 +31,23 @@ footer {
   align-items: center;
   padding: 80px;
   margin-top: 200px;
-  height: 300px; }
+  height: 500px; }
   footer p {
     font-family: 'Teko', sans-serif;
     font-size: 22px;
     color: white; }
-  footer .img-1 {
+  footer .img-1, footer .img-2, footer .img-3, footer .red-whatsapp, footer .red-facebook, footer .red-instagram {
     justify-content: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     margin: 0 15px;
     padding: 8px; }
-  footer .img-2 {
-    justify-content: center;
-    display: inline-block;
-    margin: 0 15px;
-    padding: 10px 0px 5px; }
-  footer .img-3 {
-    justify-content: center;
-    display: inline-block;
-    margin: 0 15px;
-    padding: 8px; }
+  footer .red-whatsapp {
+    color: #25a000; }
+  footer .red-facebook {
+    color: #10005e; }
+  footer .red-instagram {
+    color: #cb2500; }
 
 .footer-juegos {
   margin: 0px;
@@ -63,7 +60,16 @@ footer {
   align-items: center;
   padding: 50px;
   margin-top: 200px;
-  height: 300px; }
+  height: 400px; }
+
+.red-whatsapp {
+  color: #25a000; }
+
+.red-facebook {
+  color: #10005e; }
+
+.red-instagram {
+  color: #cb2500; }
 
 /* ESTO ES TODO EL INDEX */
 header {
@@ -168,13 +174,13 @@ main {
     margin-bottom: 15px;
     padding: 7px 5px; }
   .acceso-general .button {
-    width: 100%;
     height: 40px;
+    width: 100%;
+    font-size: 17px;
     background-color: #6329d6;
     border: 2px solid #343232;
     margin-bottom: 16px;
-    color: white;
-    font-size: 17px; }
+    color: white; }
 
 .registrate a {
   text-align: center;
@@ -219,13 +225,13 @@ main {
     border: 2px solid #5e025e;
     padding: 7px 5px; }
   .registro-general .button-dos {
-    width: 100%;
     height: 40px;
+    width: 100%;
+    font-size: 17px;
     background-color: #6329d6;
     border: 2px solid #343232;
     margin-top: 30px;
-    color: white;
-    font-size: 17px; }
+    color: white; }
 
 /* ACA TERMINA EL REGISTRO */
 /* ESTO ES LA PAG DE JUEGOS */
@@ -285,6 +291,57 @@ main {
     text-align: left; }
 
 /* ACA TERMINA PAG JUEGOS */
+.fondo-poker {
+  background-color: #141414;
+  max-height: 1500px;
+  background-image: url(https://images.contentstack.io/v3/assets/blteecf9626d9a38b03/bltf8d21193e873f3cc/61960179fa7b3210b228bc55/spade-background.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0px; }
+
+.poker-contenido {
+  display: grid;
+  grid-template-columns: repeat(1, 0.7fr);
+  margin: auto;
+  max-width: 50rem;
+  justify-content: center; }
+
+.poker-uno {
+  color: white;
+  font-size: 17px;
+  margin-top: 50px;
+  margin-bottom: 15px; }
+  .poker-uno img {
+    margin-right: 15px; }
+
+.poker-dos {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 15px; }
+  .poker-dos img {
+    margin-right: 15px; }
+
+.poker-tres {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 15px; }
+  .poker-tres img {
+    margin-right: 15px; }
+
+.poker-p {
+  font-size: 14px;
+  text-align: left;
+  color: #707070;
+  margin-bottom: 30px; }
+
+.poker-video {
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.iconos-poker {
+  width: 50px; }
+
 /* PAG QUIENES SOMOS */
 .navbar-nosotros {
   background: none;
@@ -534,6 +591,51 @@ main {
   .ruleta div img {
     width: 340px;
     height: 250px; }
+  .fondo-poker {
+    background-color: #141414;
+    max-height: 1200px;
+    background-image: url(https://images.contentstack.io/v3/assets/blteecf9626d9a38b03/bltf8d21193e873f3cc/61960179fa7b3210b228bc55/spade-background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px; }
+  .poker-contenido {
+    display: grid;
+    grid-template-columns: repeat(1, 0.7fr);
+    margin: auto;
+    max-width: 77rem;
+    justify-content: center; }
+  .poker-uno {
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 15px; }
+    .poker-uno img {
+      margin-right: 15px; }
+  .poker-dos {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px; }
+    .poker-dos img {
+      margin-right: 15px; }
+  .poker-tres {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px; }
+    .poker-tres img {
+      margin-right: 15px; }
+  .poker-p {
+    text-align: left;
+    color: #707070;
+    margin-bottom: 30px; }
+  .poker-video {
+    display: flex;
+    justify-content: center;
+    padding: 50px; }
+  .iconos-poker {
+    width: 50px;
+    transition: 0.4s; }
+  .iconos-poker:hover {
+    transform: scale(0.8); }
   /* MEDIA QUIENESSOMOS */
   .cont-nosotros {
     display: flex;
